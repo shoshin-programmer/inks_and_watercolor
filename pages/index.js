@@ -21,10 +21,9 @@ export default function Home() {
           </div>
           <div className={styles.descriptionContainer}>
             <p className={styles.landingDescription}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              pulvinar quam justo, sed euismod nibh condimentum non. Donec at
-              ante ut turpis consectetur gravida ut eget odio. Aenean efficitur
-              vulputate odio, ac elementum nisi condimentum at.
+              Inks and Watercolors is an incubator of modern art based in
+              Iloilo, Philippines. Stretching out of the comfort zone to pursue
+              painting and illustration in any medium.
             </p>
           </div>
         </main>

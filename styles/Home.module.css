@@ -17,6 +17,7 @@
 
 .main {
   padding: 5rem 0;
+  min-height: 100vh;
 }
 
 .landing {
@@ -27,15 +28,17 @@
 }
 .landingTitle {
   text-align: center;
-  font-size: 7em;
+  font-size: 6.5em;
 }
 .descriptionContainer {
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: rgba(0,0,0,0.5);
 }
 .landingDescription {
+  color: #fff;
   width: 50%;
   font-size: 2.5em;
 }
