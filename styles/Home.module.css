@@ -7,12 +7,14 @@
 }
 .bgOverlay {
   z-index: -1;
-  width: 50%;
+  max-width: 50%;
+  height: 1500px;
+  opacity: 0.8;
 }
 .mainContainer {
-  padding: 0 0.5rem;
+  padding: 0;
   z-index: 1;
-  background: rgba(199, 177, 177, 0.8);
+  background: rgba(199, 177, 177, 0.9);
 }
 
 .main {
@@ -22,11 +24,11 @@
 
 .landing {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* display: flex; */
+  /* flex-direction: column; */
 }
 .landingTitle {
+  margin-top: 150px;
   text-align: center;
   font-size: 6.5em;
 }
@@ -35,12 +37,35 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0,0,0,0.5);
 }
 .landingDescription {
-  color: #fff;
   width: 50%;
-  font-size: 2.5em;
+  font-size: 1.5em;
+}
+
+.aboutSection {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+.aboutDescContainer {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(252,252,252,0.2);
+}
+
+.aboutDescription {
+  /* color: #fff; */
+  width: 50%;
+  font-size: 1.5em;
+}
+
+.gallerySection {
+  min-height: 700px;
+  display: flex;
+  align-items: center;
 }
 
 .footer {

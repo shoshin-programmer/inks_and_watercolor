@@ -28,12 +28,16 @@ export default function Home() {
           </div>
         </main>
 
-        <div className="aboutSection">
-          Matsutani has long combined two and three dimensinal works on canvas,
-          paper and in installations.
+        <div className={styles.aboutSection}>
+          <div className={styles.aboutDescContainer}>
+            <p className={styles.aboutDescription}>
+              The artist believes that there is no greater gift than giving a
+              piece of art. Art is her manifestation of a timeless gift.
+            </p>
+          </div>
         </div>
 
-        <div className="gallerySection">GALLERY</div>
+        <div className={styles.gallerySection}>GALLERY</div>
 
         <div className="contactSection">
           <button>CONTACT ME</button>
