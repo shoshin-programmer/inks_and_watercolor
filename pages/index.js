@@ -74,7 +74,6 @@ export default function Home() {
             <div className={styles.contact}>CONTACT ME</div>
           </a>
           <i>
-            <p>OWNED</p>
             <p>Kara Diaz Serofia</p>
           </i>
         </div>
