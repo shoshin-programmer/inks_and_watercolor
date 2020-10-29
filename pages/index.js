@@ -74,14 +74,13 @@ export default function Home() {
             <div className={styles.contact}>CONTACT ME</div>
           </a>
           <i>
+            <p>OWNED</p>
             <p>Kara Diaz Serofia</p>
-            <p>designed: Arvin Mark Atienza</p>
-            <p>developed: Arvin Mark Atienza</p>
           </i>
         </div>
 
         <footer className={styles.footer}>
-          <p>&copy; 2020</p>
+          <p>SITE designed and developed by : Arvin Mark Atienza &copy; 2020</p>
         </footer>
       </div>
     </>
