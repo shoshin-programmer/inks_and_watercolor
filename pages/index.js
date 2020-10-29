@@ -7,6 +7,9 @@ export default function Home() {
     <>
       <div className={styles.bgContainer}>
         <img src="/overlay.jpeg" className={styles.bgOverlay} />
+        <div className={styles.bgContainer2}>
+          <img src="/overlay_2.jpeg" className={styles.bgOverlay2} />
+        </div>
       </div>
       <Header />
       <div className={styles.mainContainer}>
@@ -35,9 +38,19 @@ export default function Home() {
               piece of art. Art is her manifestation of a timeless gift.
             </p>
           </div>
+          <div className={styles.aboutDescContainer2}>
+            <p className={styles.aboutDescription}>
+              ——She specializes in botanical paintings and illustrations,
+              monotone portraits and custom handwritten calligraphy works on
+              paper and canvas. Looking beyond, she supports local artists and
+              traditional art.
+            </p>
+          </div>
         </div>
 
-        <div className={styles.gallerySection}>GALLERY</div>
+        <div className={styles.gallerySection}>
+          <p className={styles.galleryTitle}>GALLERY</p>
+        </div>
 
         <div className="contactSection">
           <button>CONTACT ME</button>
