@@ -50,6 +50,23 @@ export default function Home() {
 
         <div className={styles.gallerySection}>
           <p className={styles.galleryTitle}>GALLERY</p>
+          <div className={styles.galleryContainer}>
+            {[
+              "overlay.jpeg",
+              "overlay_2.jpeg",
+              "overlay.jpeg",
+              "overlay_2.jpeg",
+              "overlay.jpeg",
+              "overlay_2.jpeg"
+            ].map(image => (
+              <div className={styles.galleryObj}>
+                <img src={image} className={styles.galleryImg} />
+                <div className={styles.galleryImgText}>
+                  <p>Cinque Terre</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="contactSection">
@@ -62,6 +79,11 @@ export default function Home() {
           <p>Site by: Arvin Mark Atienza</p>
           <p>&copy; 2020</p>
         </footer>
+      </div>
+      <div className={styles.mainContainer}>
+        <div className="contactSection">
+          <button>CONTACT ME</button>
+        </div>
       </div>
     </>
   );
