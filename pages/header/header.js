@@ -32,13 +32,13 @@ export default function Header() {
           <img src="/logo.png" className={styles.logo} />
           <ul className={styles.list}>
             <a href="#about">
-              <li className={styles.listItem}>about.</li>
+              <li className={styles.listItem}>instagram.</li>
             </a>
             <a href="#work">
-              <li className={styles.listItem}>work.</li>
+              <li className={styles.listItem}>linkedin.</li>
             </a>
             <a href="#projects">
-              <li className={styles.listItem}>projects.</li>
+              <li className={styles.listItem}>gallery.</li>
             </a>
             <a href="#contact">
               <li className={styles.listItem}>contact.</li>

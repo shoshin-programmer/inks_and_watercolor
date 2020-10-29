@@ -91,7 +91,7 @@
 }
 
 .gallerySection {
-  min-height: 700px;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,6 +133,34 @@
   padding: 10px 20px;
 }
 
+.contactSection {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.contact {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+  outline: none;
+  padding: 1em;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.8em;
+  border: none;
+  transition: 500ms ease-in-out;
+}
+.contact:hover {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  transition: 500ms ease-in-out;
+}
+.contactSection p {
+  font-size: 0.8em;
+}
 .footer {
   width: 100%;
   height: 100px;

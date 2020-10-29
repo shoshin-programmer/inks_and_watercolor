@@ -69,21 +69,20 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="contactSection">
-          <button>CONTACT ME</button>
+        <div className={styles.contactSection}>
+          <a href="mailto:atienza.new@gmail.com">
+            <div className={styles.contact}>CONTACT ME</div>
+          </a>
+          <i>
+            <p>Kara Diaz Serofia</p>
+            <p>designed: Arvin Mark Atienza</p>
+            <p>developed: Arvin Mark Atienza</p>
+          </i>
         </div>
 
         <footer className={styles.footer}>
-          <p>John Doe</p>
-          <p>janedoe@email.com</p>
-          <p>Site by: Arvin Mark Atienza</p>
           <p>&copy; 2020</p>
         </footer>
-      </div>
-      <div className={styles.mainContainer}>
-        <div className="contactSection">
-          <button>CONTACT ME</button>
-        </div>
       </div>
     </>
   );
