@@ -15,7 +15,7 @@ export default function Header() {
     const prevScrollPosition = prevScrollpos;
 
     const currentScrollPos = window.pageYOffset;
-    const visible = prevScrollPosition >= currentScrollPos;
+    const visible = (prevScrollPosition - 2) >= currentScrollPos;
 
     setPrevScrollpos(currentScrollPos);
     setVisibility(visible);
