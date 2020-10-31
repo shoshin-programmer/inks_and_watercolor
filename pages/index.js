@@ -19,19 +19,19 @@ export default function Home() {
   const [photoIndex, setPhotoIndex] = useState(0);
 
   return (
-    <>
-      <ReactBnbGallery
-        show={isOpen}
-        photos={PHOTOS}
-        activePhotoIndex={photoIndex}
-        onClose={() => setIsOpen(false)}
-      />
+    <div className={styles.container}>
       <div className={styles.bgContainer}>
         <img src="/overlay.jpeg" className={styles.bgOverlay} />
         <div className={styles.bgContainer2}>
           <img src="/overlay_2.jpeg" className={styles.bgOverlay2} />
         </div>
       </div>
+      <ReactBnbGallery
+        show={isOpen}
+        photos={PHOTOS}
+        activePhotoIndex={photoIndex}
+        onClose={() => setIsOpen(false)}
+      />
       <Header />
       <div className={styles.mainContainer}>
         <Head>
@@ -116,6 +116,6 @@ export default function Home() {
           </p>
         </footer>
       </div>
-    </>
+    </div>
   );
 }

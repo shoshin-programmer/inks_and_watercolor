@@ -1,3 +1,7 @@
+.container {
+  width: 100%;
+  overflow: hidden;
+}
 .bgContainer {
   z-index: -1;
   position: absolute;
@@ -18,7 +22,7 @@
 }
 .bgOverlay {
   z-index: -1;
-  max-width: 50%;
+  width: 50%;
   height: 1500px;
   opacity: 0.9;
 }
@@ -26,7 +30,7 @@
   position: absolute;
   right: 0;
   height: 1500px;
-  max-width: 50%;
+  width: 50%;
 }
 .mainContainer {
   padding: 0;
@@ -41,8 +45,6 @@
 
 .landing {
   text-align: center;
-  /* display: flex; */
-  /* flex-direction: column; */
 }
 .landingTitle {
   margin-top: 150px;
@@ -179,4 +181,58 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .landingTitle {
+    font-size: 3em;
+  }
+  .landingDescription {
+    font-size: 1em;
+    text-align: center;
+  }
+  .aboutSection {
+    min-height: 500px;
+  }
+  .aboutDescContainer {
+    width: 350px;
+    justify-content: left;
+  }
+  .aboutDescription {
+    width: 85%;
+    font-size: 0.5em;
+  }
+  .galleryContainer {
+    align-items: center;
+    justify-content: center;
+  }
+  .galleryObj {
+    width: 300px;
+  }
+}
+@media screen and (max-device-width: 1200px) {
+  .landingTitle {
+    font-size: 3.5em;
+  }
+  .landingDescription {
+    font-size: 2em;
+    text-align: center;
+  }
+  .aboutSection {
+    min-height: 600px;
+  }
+  .aboutDescContainer {
+    width: 350px;
+    justify-content: left;
+  }
+  .aboutDescription {
+    width: 100%;
+    font-size: 0.7em;
+  }
+  .galleryContainer {
+    align-items: center;
+    justify-content: center;
+  }
+  .galleryObj {
+    width: 300px;
+  }
 }
