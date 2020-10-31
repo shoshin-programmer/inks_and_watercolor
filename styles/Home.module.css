@@ -191,7 +191,7 @@
     text-align: center;
   }
   .aboutSection {
-    min-height: 500px;
+    min-height: 600px;
   }
   .aboutDescContainer {
     width: 350px;
@@ -199,7 +199,15 @@
   }
   .aboutDescription {
     width: 85%;
-    font-size: 0.5em;
+  }
+  .aboutDescContainer {
+    font-size: 1.1em;
+  }
+  .aboutDescContainer2 {
+    font-size: 0.9em;
+  }
+  .galleryTitle{
+    margin-bottom: 10px;
   }
   .galleryContainer {
     align-items: center;
@@ -209,7 +217,7 @@
     width: 300px;
   }
 }
-@media screen and (max-device-width: 1200px) {
+@media screen and (max-device-width: 1200px) and (min-width: 768px) {
   .landingTitle {
     font-size: 3.5em;
   }
