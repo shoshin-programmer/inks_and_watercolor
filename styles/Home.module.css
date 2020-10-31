@@ -1,7 +1,41 @@
 .container {
   width: 100%;
   overflow: hidden;
+  opacity: 0.1;
+  animation: fade 1s ease 0s forwards;
 }
+@keyframes fade {
+  100% {
+    opacity: 1;
+  }
+}
+.preloadContainer {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  animation: blur 4s ease 0s forwards;
+}
+@keyframes blur {
+  0% {
+    -webkit-filter: blur(50px);
+    -moz-filter: blur(50px);
+    -o-filter: blur(50px);
+    -ms-filter: blur(50px);
+  }
+  50% {
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+  }
+  80% {
+    -webkit-filter: blur(30px);
+    -moz-filter: blur(30px);
+    -o-filter: blur(30px);
+    -ms-filter: blur(30px);
+  }
+}
+
 .bgContainer {
   z-index: -1;
   position: absolute;
@@ -206,7 +240,7 @@
   .aboutDescContainer2 {
     font-size: 0.9em;
   }
-  .galleryTitle{
+  .galleryTitle {
     margin-bottom: 10px;
   }
   .galleryContainer {
