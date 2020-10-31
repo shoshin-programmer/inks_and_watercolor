@@ -34,16 +34,16 @@ export default function Home() {
         <div className={styles.aboutSection}>
           <div className={styles.aboutDescContainer}>
             <p className={styles.aboutDescription}>
-              The artist believes that there is no greater gift than giving a
-              piece of art. Art is her manifestation of a timeless gift.
+              She specializes in botanical paintings and illustrations, monotone
+              portraits and custom handwritten calligraphy works on paper and
+              canvas. Looking beyond, she supports local artists and traditional
+              art.
             </p>
           </div>
           <div className={styles.aboutDescContainer2}>
             <p className={styles.aboutDescription}>
-              ——She specializes in botanical paintings and illustrations,
-              monotone portraits and custom handwritten calligraphy works on
-              paper and canvas. Looking beyond, she supports local artists and
-              traditional art.
+              —— The artist believes that there is no greater gift than giving a
+              piece of art. Art is her manifestation of a timeless gift.
             </p>
           </div>
         </div>
@@ -57,7 +57,7 @@ export default function Home() {
               "gallery/3.jpeg",
               "gallery/4.jpeg",
               "gallery/5.jpeg",
-              "gallery/6.jpeg",
+              "gallery/6.jpeg"
             ].map(image => (
               <div className={styles.galleryObj}>
                 <img src={image} className={styles.galleryImg} />
