@@ -72,14 +72,7 @@ export default function Home() {
         <div className={styles.gallerySection} id="gallery">
           <p className={styles.galleryTitle}>GALLERY</p>
           <div className={styles.galleryContainer}>
-            {[
-              "gallery/1.jpeg",
-              "gallery/2.jpeg",
-              "gallery/3.jpeg",
-              "gallery/4.jpeg",
-              "gallery/5.jpeg",
-              "gallery/6.jpeg"
-            ].map((image, index) => (
+            {PHOTOS.map((image, index) => (
               <div
                 className={styles.galleryObj}
                 onClick={() => {
