@@ -5,7 +5,7 @@ import ReactBnbGallery from "react-bnb-gallery";
 import "react-bnb-gallery/dist/style.css";
 // Internal Dependencies
 import styles from "../styles/Index.module.css";
-import Header from "./header/header";
+import Header from "../components/header/Header";
 
 const PHOTOS = [
   "gallery/1.jpeg",
