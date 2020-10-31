@@ -10,6 +10,7 @@ body {
   /* background: #c7a7a7; */
   /* background: #c7b1b1; */
   /* background: rgba(199, 177, 177, 0.5); */
+  scroll-behavior: smooth;
 }
 
 a {

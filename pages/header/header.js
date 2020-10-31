@@ -31,14 +31,14 @@ export default function Header() {
         <Fade cascade top delay={4200} duration={1300}>
           <img src="/logo.png" className={styles.logo} />
           <ul className={styles.list}>
-            <a href="#about">
+            <a
+              href="https://www.instagram.com/karamikhaila.ds/"
+              target="_blank"
+            >
               <li className={styles.listItem}>instagram.</li>
             </a>
-            <a href="#work">
-              <li className={styles.listItem}>linkedin.</li>
-            </a>
-            <a href="#projects">
-              <li className={styles.listItem}>gallery.</li>
+            <a href="#gallery">
+              <li className={styles.listItem}>featured.</li>
             </a>
             <a href="#contact">
               <li className={styles.listItem}>contact.</li>

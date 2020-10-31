@@ -48,7 +48,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.gallerySection}>
+        <div className={styles.gallerySection} id="gallery">
           <p className={styles.galleryTitle}>GALLERY</p>
           <div className={styles.galleryContainer}>
             {[
@@ -71,7 +71,9 @@ export default function Home() {
 
         <div className={styles.contactSection}>
           <a href="mailto:atienza.new@gmail.com">
-            <div className={styles.contact}>CONTACT ME</div>
+            <div className={styles.contact} id="contact">
+              CONTACT ME
+            </div>
           </a>
           <i>
             <p>Kara Diaz Serofia</p>
@@ -79,7 +81,13 @@ export default function Home() {
         </div>
 
         <footer className={styles.footer}>
-          <p>SITE designed and developed by : Arvin Mark Atienza &copy; 2020</p>
+          <p>
+            SITE designed and developed by :
+            <a href="https://www.mark-atienza.com" target="_blank">
+              Arvin Mark Atienza &copy; 2020
+            </a>
+
+          </p>
         </footer>
       </div>
     </>
