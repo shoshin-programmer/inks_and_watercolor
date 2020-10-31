@@ -35,7 +35,7 @@ export default function Home() {
       <Header />
       <div className={styles.mainContainer}>
         <Head>
-          <title>Create Next App</title>
+          <title>Inks and Watercolor</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
