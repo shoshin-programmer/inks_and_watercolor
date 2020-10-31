@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "./header/header";
 import "react-bnb-gallery/dist/style.css";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Index.module.css";
 import React, { useState } from "react";
 import ReactBnbGallery from "react-bnb-gallery";
 
@@ -91,7 +91,7 @@ export default function Home() {
           </div>
 
           <div className={styles.contactSection}>
-            <a href="mailto:atienza.new@gmail.com">
+            <a href="mailto:kara.mikhaila@gmail.com">
               <div className={styles.contact} id="contact">
                 CONTACT ME
               </div>
@@ -101,14 +101,13 @@ export default function Home() {
             </i>
           </div>
 
-          <footer className={styles.footer}>
-            <p>
-              SITE designed and developed by :
-              <a href="https://www.mark-atienza.com" target="_blank">
-                Arvin Mark Atienza &copy; 2020
-              </a>
-            </p>
-          </footer>
+          <div className={styles.footer}>
+            <a href="https://www.mark-atienza.com" target="_blank">
+              <p>
+                SITE designed and developed by : Arvin Mark Atienza &copy; 2020
+              </p>
+            </a>
+          </div>
         </div>
       </div>
     </div>

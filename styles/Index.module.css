@@ -1,19 +1,12 @@
 .container {
   width: 100%;
   overflow: hidden;
-  opacity: 0.1;
-  animation: fade 1s ease 0s forwards;
-}
-@keyframes fade {
-  100% {
-    opacity: 1;
-  }
 }
 .preloadContainer {
   width: 100vw;
   height: 100vh;
   z-index: 1;
-  animation: blur 4s ease 0s forwards;
+  animation: blur 3s ease 0s forwards;
 }
 @keyframes blur {
   0% {
@@ -28,7 +21,7 @@
     -o-filter: blur(20px);
     -ms-filter: blur(20px);
   }
-  80% {
+  70% {
     -webkit-filter: blur(30px);
     -moz-filter: blur(30px);
     -o-filter: blur(30px);
@@ -202,6 +195,7 @@
   width: 100%;
   height: 100px;
   border-top: 1px solid #eaeaea;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
