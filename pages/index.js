@@ -1,9 +1,11 @@
+// External Dependencies
 import Head from "next/head";
-import Header from "./header/header";
-import "react-bnb-gallery/dist/style.css";
-import styles from "../styles/Index.module.css";
 import React, { useState } from "react";
 import ReactBnbGallery from "react-bnb-gallery";
+import "react-bnb-gallery/dist/style.css";
+// Internal Dependencies
+import styles from "../styles/Index.module.css";
+import Header from "./header/header";
 
 const PHOTOS = [
   "gallery/1.jpeg",
