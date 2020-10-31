@@ -1,10 +1,31 @@
 import Head from "next/head";
 import Header from "./header/header";
+import "react-bnb-gallery/dist/style.css";
 import styles from "../styles/Home.module.css";
+import React, { useState } from "react";
+import ReactBnbGallery from "react-bnb-gallery";
+
+const PHOTOS = [
+  "gallery/1.jpeg",
+  "gallery/2.jpeg",
+  "gallery/3.jpeg",
+  "gallery/4.jpeg",
+  "gallery/5.jpeg",
+  "gallery/6.jpeg"
+];
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [photoIndex, setPhotoIndex] = useState(0);
+
   return (
     <>
+      <ReactBnbGallery
+        show={isOpen}
+        photos={PHOTOS}
+        activePhotoIndex={photoIndex}
+        onClose={() => setIsOpen(false)}
+      />
       <div className={styles.bgContainer}>
         <img src="/overlay.jpeg" className={styles.bgOverlay} />
         <div className={styles.bgContainer2}>
@@ -58,8 +79,14 @@ export default function Home() {
               "gallery/4.jpeg",
               "gallery/5.jpeg",
               "gallery/6.jpeg"
-            ].map(image => (
-              <div className={styles.galleryObj}>
+            ].map((image, index) => (
+              <div
+                className={styles.galleryObj}
+                onClick={() => {
+                  setIsOpen(true);
+                  setPhotoIndex(index);
+                }}
+              >
                 <img src={image} className={styles.galleryImg} />
                 <div className={styles.galleryImgText}>
                   <p>Cinque Terre</p>
@@ -86,7 +113,6 @@ export default function Home() {
             <a href="https://www.mark-atienza.com" target="_blank">
               Arvin Mark Atienza &copy; 2020
             </a>
-
           </p>
         </footer>
       </div>
