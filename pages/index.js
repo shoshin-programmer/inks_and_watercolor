@@ -7,6 +7,7 @@ import "react-bnb-gallery/dist/style.css";
 import styles from "../styles/Index.module.css";
 import Header from "../components/header/Header";
 import FullLoader from "../components/loaders/FullLoader";
+import AboutSection from "../components/homepage/AboutSection";
 import Fade from "react-reveal/Fade";
 
 const PHOTOS = [
@@ -61,22 +62,7 @@ export default function Home() {
             </Fade>
           </main>
 
-          <div className={styles.aboutSection}>
-            <div className={styles.aboutDescContainer}>
-              <p className={styles.aboutDescription}>
-                She specializes in botanical paintings and illustrations,
-                monotone portraits and custom handwritten calligraphy works on
-                paper and canvas. Looking beyond, she supports local artists and
-                traditional art.
-              </p>
-            </div>
-            <div className={styles.aboutDescContainer2}>
-              <p className={styles.aboutDescription}>
-                —— The artist believes that there is no greater gift than giving
-                a piece of art. Art is her manifestation of a timeless gift.
-              </p>
-            </div>
-          </div>
+          <AboutSection />
 
           <div className={styles.gallerySection} id="gallery">
             <p className={styles.galleryTitle}>GALLERY</p>
