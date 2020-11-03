@@ -30,6 +30,7 @@ export default function Home() {
           <img src="/overlay.jpeg" className={styles.bgOverlay} />
           <div className={styles.bgContainer2}>
             <img src="/overlay_2.jpeg" className={styles.bgOverlay2} />
+            <meta property="og:image" content="/gallery/6.jpeg" />
           </div>
         </div>
         <ReactBnbGallery
