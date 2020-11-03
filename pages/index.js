@@ -84,9 +84,6 @@ export default function Home() {
                   }}
                 >
                   <img src={image} className={styles.galleryImg} />
-                  <div className={styles.galleryImgText}>
-                    <p>Cinque Terre</p>
-                  </div>
                 </div>
               ))}
             </div>
