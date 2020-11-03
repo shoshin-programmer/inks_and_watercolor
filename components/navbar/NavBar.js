@@ -2,9 +2,9 @@
 import React, { useEffect } from "react";
 import Fade from "react-reveal/Fade";
 // Assets
-import styles from "./header.module.css";
+import styles from "./navbar.module.css";
 
-export default function Header() {
+export default function NavBar() {
   const [visible, setVisibility] = React.useState(true);
   const [menu, setMenu] = React.useState(false);
   const [prevScrollpos, setPrevScrollpos] = React.useState(

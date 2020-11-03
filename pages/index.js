@@ -5,7 +5,7 @@ import ReactBnbGallery from "react-bnb-gallery";
 import "react-bnb-gallery/dist/style.css";
 // Internal Dependencies
 import styles from "../styles/Index.module.css";
-import Header from "../components/header/Header";
+import NavBar from "../components/navbar/NavBar";
 import FullLoader from "../components/loaders/FullLoader";
 import AboutSection from "../components/homepage/AboutSection";
 import Fade from "react-reveal/Fade";
@@ -38,7 +38,7 @@ export default function Home() {
           activePhotoIndex={photoIndex}
           onClose={() => setIsOpen(false)}
         />
-        <Header />
+        <NavBar />
         <div className={styles.mainContainer}>
           <Head>
             <title>Inks and Watercolor</title>
