@@ -7,6 +7,7 @@ import "react-bnb-gallery/dist/style.css";
 import styles from "../styles/Index.module.css";
 import Header from "../components/header/Header";
 import FullLoader from "../components/loaders/FullLoader";
+import Fade from "react-reveal/Fade";
 
 const PHOTOS = [
   "gallery/1.jpeg",
@@ -45,15 +46,19 @@ export default function Home() {
 
           <main className={styles.main}>
             <div className={styles.landing}>
-              <p className={styles.landingTitle}>Inks & Watercolor</p>
+              <Fade cascade top delay={4200} duration={600}>
+                <p className={styles.landingTitle}>Inks & Watercolor</p>
+              </Fade>
             </div>
-            <div className={styles.descriptionContainer}>
-              <p className={styles.landingDescription}>
-                Inks and Watercolors is an incubator of modern art based in
-                Iloilo, Philippines. Stretching out of the comfort zone to
-                pursue painting and illustration in any medium.
-              </p>
-            </div>
+            <Fade cascade delay={4700} duration={600}>
+              <div className={styles.descriptionContainer}>
+                <p className={styles.landingDescription}>
+                  Inks and Watercolors is an incubator of modern art based in
+                  Iloilo, Philippines. Stretching out of the comfort zone to
+                  pursue painting and illustration in any medium.
+                </p>
+              </div>
+            </Fade>
           </main>
 
           <div className={styles.aboutSection}>

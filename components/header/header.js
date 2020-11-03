@@ -33,7 +33,7 @@ export default function Header() {
         ${menu ? styles.headerFullView : styles.header}
         `}
       >
-        <Fade cascade top duration={300}>
+        <Fade cascade top delay={4000} duration={300}>
           <img src="/logo.png" className={styles.logo} />
           <ul className={styles.list}>
             <div className={styles.burger} onClick={() => setMenu(!menu)}>
