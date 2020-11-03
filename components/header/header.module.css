@@ -1,5 +1,5 @@
 .headerWrapper {
-  z-index: 9;
+  z-index: 999;
   position: fixed;
   top: 0;
   height: 80px;

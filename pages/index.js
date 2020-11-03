@@ -6,6 +6,7 @@ import "react-bnb-gallery/dist/style.css";
 // Internal Dependencies
 import styles from "../styles/Index.module.css";
 import Header from "../components/header/Header";
+import FullLoader from "../components/loaders/FullLoader";
 
 const PHOTOS = [
   "gallery/1.jpeg",
@@ -109,6 +110,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <FullLoader />
     </div>
   );
 }
